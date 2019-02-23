@@ -1,2 +1,2 @@
-# Example CRUDE using JPA
+# Example CRUD using JPA
 Atividade feita para a disciplina de Desenvolvimento de Aplicações Corporativas.
