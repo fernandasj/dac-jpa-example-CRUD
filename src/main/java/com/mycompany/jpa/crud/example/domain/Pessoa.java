@@ -9,10 +9,11 @@ import javax.persistence.Id;
  *
  * @author fernanda
  */
-
+//definindo Pessoa como entidade
 @Entity
 public class Pessoa implements Serializable{
     
+    //definindo o atributo: id como PrimaryKey da tabela
     @Id
     @GeneratedValue
     private int id;

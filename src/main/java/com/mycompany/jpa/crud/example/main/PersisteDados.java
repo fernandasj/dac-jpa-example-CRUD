@@ -8,6 +8,7 @@ import javax.persistence.EntityManager;
  * @author fernanda
  */
 public class PersisteDados {
+    //instanciando o gerenciador de instancias
     private final EntityManager em;
 
     public PersisteDados(EntityManager em) {
@@ -18,9 +19,14 @@ public class PersisteDados {
         Pessoa p1 = new Pessoa("Fernanda");
         Pessoa p2 = new Pessoa("Fer");
         
+        //abrindo uma transaçao com o banco
         em.getTransaction().begin();
+        
+        //persistindo os dados no banco
         em.persist(p1);
         em.persist(p2);
+        
+        //confirmando a persistencia dos dados no banco
         em.getTransaction().commit();
     }
 }
